@@ -125,15 +125,18 @@
         <div class="container">
           <h2 class="activity-title">Чем мы занимаемся</h2>
           <ul class="activity-list">
-            <li class="activity-item">
-              <img
-                class="activity-img"
-                src="./images/other1.jpg"
-                alt="Мужчина печатает на клавиатуре"
-                width="370"
-                height="294"
-              />
-            </li>
+            <div class="activity-item-wrapper">
+              <li class="activity-item">
+                <img
+                  class="activity-img"
+                  src="./images/other1.jpg"
+                  alt="Мужчина печатает на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+                <p class="activity-item-text">Десктопні додатки</p>
+              </li>
+            </div>
             <li class="activity-item">
               <img
                 class="activity-img"
@@ -449,5 +452,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close-btn"></button>
+        <svg class="modal-close-btn-icon" width="30" height="30">
+          <use href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </div>
+    </div>
   </body>
 </html>

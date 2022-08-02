@@ -275,6 +275,33 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.activity-item-wrapper {
+  position: relative;
+  display: block;
+}
+.activity-item-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  right: 0;
+  bottom: 0;
+  padding-left: 107px;
+  padding-top: 27px;
+  padding-right: 107px;
+  padding-bottom: 27px;
+}
 /* ====================/ACTIVITY============== */
 /* =======================TEAM================ */
 .team {
@@ -601,3 +628,23 @@ button.current-1 {
   background-color: var(--accent-color);
 }
 /* ==========================/FOOTER===================== */
+/* =======================MODAL========================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var();
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 528px;
+  min-height: 581px;
+  background: var(--primary-bg-color);
+}
